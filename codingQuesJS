@@ -1,0 +1,10 @@
+Char count and add keys in an object Dyanmically 
+var input ='Deepak';  var res={};    
+ for (var i=0;i<input.length;i++)
+ {
+
+ res[input.charAt(i)]=res[input.charAt(i)]? res[input.charAt(i)]+1:1;
+// res[input.charAt(i)] first extract the value of [input.charAt(i)] as D then  res.D=1, will be added for the first time. 
+ console.log('val'+input.charAt(i));
+ }
+ console.log(res);
